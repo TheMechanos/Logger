@@ -1,0 +1,7 @@
+version: 1.0.0
+maintainers:
+  - Sebastian Koczur <themechanos@gmail.com>
+description: >-
+  Log system library
+
+repository: "https://github.com/TheMechanos/Logger.git"
