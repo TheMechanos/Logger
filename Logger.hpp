@@ -11,6 +11,7 @@
 #include <functional>
 #include <stdarg.h>
 #include <stdint.h>
+#include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -124,7 +125,7 @@ private:
 
         uint32_t m = tickFun();
 
-        size_t s = snprintf(buffer, buflen, "%s(%04lu.%03lu) %9s -> ", LOG_LEVEL_COLORS[(uint8_t)lvl], m / 1000, m % 1000, TAG);
+        size_t s = snprintf(buffer, buflen, "%s(%04" PRIu32 ".%03" PRIu32 ") %9s -> ", LOG_LEVEL_COLORS[(uint8_t)lvl], m / 1000, m % 1000, TAG);
         printFun(buffer, s);
 
         printFun(data, dataLen);
