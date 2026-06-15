@@ -1,6 +1,6 @@
 {
     "name": "Logger",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Library creates Log system",
     "keywords": "log, logger",
     "repository": {
